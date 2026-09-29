@@ -1,0 +1,70 @@
+Project Report
+Student Grade Management System
+Name AYUSH PARMAR
+
+Institute VIT Bhopal University
+Registration No. 26MEI10016 ______________________
+Repository Link ______________________
+1. Introduction
+The Student Grade Management System is a console-based Python application that records
+student marks, assigns grades automatically, and displays class statistics through a simple
+menu-driven interface.
+2. Objectives
+• Store student names and their marks
+• Automatically calculate grades from marks
+• Display all students and a class summary (total students and average marks)
+3. Tools and Technologies
+• Language: Python 3
+• Data storage: built-in dictionary (in memory)
+• Interface: command line using input() and print()
+4. System Design
+Student records are held in a dictionary students = {name: marks}. The program is organised
+into the following functions:
+Function Purpose
+add_student() Takes a name and marks (0-100) and stores them
+view_students() Lists all students with their marks
+calculate_grade(marks) Returns the grade for the given marks
+show_statistics() Shows total students and average marks
+main() Runs the 5-option menu loop
+Grading scale
+Marks Grade
+80 and above A
+60 - 79 B
+40 - 59 C
+Below 40 F
+5. Working
+On launch the program shows a menu. The user selects an option from 1 to 5:
+• 1 - Add a student and marks
+• 2 - View all students
+• 3 - Show the grade of a particular student
+• 4 - Show class statistics
+• 5 - Exit
+The menu repeats in a loop until the user chooses Exit. Data is kept in memory only for the
+duration of the run.
+6. Sample Output
+=== Student Grade Management ===
+1. Add Student
+2. View All Students
+3. Show Grade for Student
+4. Show Statistics
+5. Exit
+Enter your choice (1-5): 3
+Enter student name: Rahul
+Rahul got 85 marks - Grade: A
+(Attach actual screenshots of your program run here if required.)
+7. Limitations
+• Data is lost when the program closes (no file or database storage)
+• No input validation: non-numeric marks crash the program and out-of-range marks are
+accepted
+• Duplicate names overwrite earlier records
+• No option to edit or delete a student
+8. Future Scope
+• Save data to a file or database
+• Validate input using try/except and range checks
+• Add edit and delete features
+• Show highest and lowest marks and grade distribution
+• Build a GUI or web version
+9. Conclusion
+The project applies core Python concepts such as functions, dictionaries, loops and
+conditional statements to build a working menu-driven grade management tool. It provides a
+base that can be extended with persistent storage and validation.
